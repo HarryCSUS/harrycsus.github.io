@@ -4,24 +4,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Team 200 OK Project Website</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
 </head>
 
-	
 
-<body id="homejump">
+<body>
 	
 
 	<div class="flex" id="main"></div>
 
 
 	<div class = "projectTitle"> 
-		<h1 class="projName"> 
+		<h1 class="projName"  id="autoJump"> 
 			Delta Hand Pies Internal App
 			</h1>
 			
 			<nav class="Navi">
 				<ul class="menu">
-					<li><a class ="navButton" href = "#homejump">Home</a></li>
+					<li><a class ="navButton" href = "#homeJump">Home</a></li>
 					<li><a class ="navButton" href = "#BgJump">Background</a></li>
 					<li><a class ="navButton" href = "#scopeJump">Scope</a></li>
 					<li><a class ="navButton" href = "#needJump">Need</a></li>
@@ -41,12 +41,14 @@
 		<div id="logo_intro_Container" class="logo_intro_Container">
 		
 			<div id="introContainer" class="introContainer">
-				<h3 >Team Name: <strong>200 OK</strong></h3>
+			<a class="anchor" id="homeJump"></a>
+
+				<h3>Team Name: <strong>200 OK</strong></h3>
 				Team Members:
 			<ul>
 				<li>Long Nguyen</li>
 				<li>Nhat Doan</li>
-				<li  id="BgJump">Harry Luu</li>
+				<li>Harry Luu</li>
 				<li>Ezekiel Sung</li>
 				<li>Hung Truong</li>
 				<li>Mustafa Rasouli</li>
@@ -58,12 +60,13 @@
 		<hr>
 
 		<div  class="bgContainer">
+		<a class="anchor" id="BgJump"></a>
 			<h3>Background</h3>
 				<ul>
 					<li>Business: Delta Hand Pies</li>
 					<li>Problems to solve:
 					<ul>
-					<li id="scopeJump">The client is manually processing all orders each week</li>
+					<li>The client is manually processing all orders each week</li>
 					<li>Having to map out delivery routes of orders to drivers.</li>
 					<li>There is a lack of flow in the delivery process.</li>
 					<li>Drivers currently do not have an app they can rely on for order information, delivery address, and instructions.</li>
@@ -74,10 +77,11 @@
 		<hr />
 
 		<div class="scopeContainer">
+		<a class="anchor" id="scopeJump"></a>
 			<h3>Scope</h3>
 			<ul>
 				<li>This project is for the creation of a data management application for the client’s business of making custom pies and delivering it directly to a customer’s door.</li>
-				<li  id="needJump">The application will allow operation managers to sort, manage, and assign delivery data to specific drivers.</li>
+				<li>The application will allow operation managers to sort, manage, and assign delivery data to specific drivers.</li>
 				<lI>There will be a corresponding mobile application whereby anyone using the app can view and manage detailed order information.</li>
 				<li>Able to automate the process of notifying customers regarding their order status.</li>
 			</ul>
@@ -85,12 +89,13 @@
 		<hr />
 
 		<div class="needContainer">
+		<a class="anchor" id="needJump"></a>
 			<h3 >Need</h3>
 			<ul>
 				<li>The client needs an automation of weekly delivery data management for Delta Hand Pies. </li>
 				<li>The  system would import raw sales data via a pre-built WordPress - WooCommerce through APIs. </li>
 				<li>There is a need to be able to manipulate and express these data in a useful way. </li>
-				<li id="solJump">Delivery drivers would be able to look up the assigned information via an application.</li>
+				<li>Delivery drivers would be able to look up the assigned information via an application.</li>
 				<li>The application would output the delivery information in a JSON format.</li>
 				<li>The tool would also be used by operation managers to check  for pending and completed deliveries. </li>
 				<li>The client needs a quick and efficient method for communication between delivery driver and the customers. </li>
@@ -100,17 +105,19 @@
 		<hr>
 	
 		<div class="solContainer">
+		<a class="anchor" id="solJump"></a>
 			<h3>Proposed Solution</h3>
 			<ul>
 				<li>Build a SQL internal database to fetch data from a built WordPress-WooCommerce through APIs.</li>
-				<li id="highJump">Allowing the data to be manage on an internal website.
+				<li>Allowing the data to be manage on an internal website.
 				<li>An accompanying driver’s app will display detailed order information.</li> 
 				<li>An automated messaging system using Twilio APIs for communication between drivers to the customers will be implemented into the drivers app.</li>
 			</ul>
 		</div>
 		<hr>
 		<div class="highlightContainer">
-			<h3  id="protoJump">Highlights</h3>
+		<a class="anchor" id="highJump"></a>
+			<h3>Highlights</h3>
 			<p>
 			<!-- Change the description of the project strting from here -->
 			<!-- What is special about your project? -->
@@ -125,22 +132,23 @@
 		</div>
 		<hr>
 		<div class="Prototype_Container">
+		<a class="anchor" id="protoJump"></a>
 			<h3>Prototypes:</h3>
 			<p>
 					<div class="responsive">
 					  <div class="gallery">
-						<a target="_blank" href="https://mustafaxr.github.io/mainpage/ ">
-						  <img src="Login.jpg" alt="Login Portal" width="380" height="auto">
+						<a target="_blank" href="https://mustafaxr.github.io/landingpage/login.html ">
+						  <img src="Login.PNG" alt="Login Portal" width="380" height="auto">
 						
-						<div  id="timeJump" class="desc">Login Portal</div>
+						<div class="desc">Login Portal</div>
 					  </div>
 					</div>
 					</a>
 					
 					<div class="responsive">
 					  <div class="gallery">
-						<a target="_blank" href="https://hungmtruong.github.io/orderList/">
-						  <img src="OrderQ.jpg" alt="Order List" width="380" height="auto">
+						<a target="_blank" href="https://hungmtruong.github.io/updatedOrderList/">
+						  <img src="OrderQ.PNG" alt="Order List" width="380" height="auto">
 						
 						<div class="desc">Order List</div>
 					  </div>
@@ -150,7 +158,7 @@
 					<div class="responsive">
 					  <div class="gallery">
 						<a target="_blank" href="https://nhatdoan1991.github.io/ ">
-						  <img  src="InternalWeb.jpg" alt="Order Queue" width="380" height="auto">
+						  <img  src="OrderList.PNG" alt="Order Queue" width="380" height="auto">
 						
 						<div class="desc">Order Queue</div>
 					  </div>
@@ -159,8 +167,8 @@
 					
 					<div class="responsive">
 					  <div class="gallery">
-						<a target="_blank" href="https://ezekielsung.github.io/ ">
-						  <img src="mobileApp.jpg" alt="Driver Mobile Application" width="380" height="auto">
+						<a target="_blank" href="https://ezekielsung.github.io/UpdatedDriversApp/">
+						  <img src="DriverApp.PNG" alt="Driver Mobile Application" width="380" height="auto">
 						
 						<div class="desc">Driver Mobile Application</div>
 					  </div>
@@ -172,10 +180,11 @@
 			
 		<hr>
 			<div id="Lesson" class="timeline_Container">
+			<a class="anchor" id="timeJump"></a>
 				<h3>Projected Timeline:</h3>
 				<p>
 					<!--- insert timeline image here-->
-					<img class="responsiveTimeline" src="Timeline.jpg" alt="Projected Project Timeline" width="784" height="auto">
+					<img class="responsiveTimeline" src="Timeline.PNG" alt="Projected Project Timeline" width="784" height="auto">
 				</p>
 		
 				<div class="lessonContainer">
