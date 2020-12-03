@@ -7,7 +7,7 @@ const showMainAnimation = (parent) => {
   box.classList.add("box", "flex");
   parent.appendChild(boxContainer);
   boxContainer.appendChild(box);
-  const quote = ["CSUS:", "CSC", "Senior", "Project", "Website"];
+  const quote = ["CSUS:", "Senior", "Project", "Website"];
   let delay = 0;
   // Add all the words
   for (let word in quote){
@@ -43,7 +43,17 @@ const init = () => {
   setTimeout(() => {
     container.removeChild(curtain);
     showMainAnimation(container);
-  }, loadingAnimationTime + 100)
+  }, loadingAnimationTime + 100);
+  setTimeout(autoScroll, 5700)
 };
 
+
+function autoScroll() {
+  var elmnt = document.getElementById("autoJump");
+  elmnt.scrollIntoView();
+}
+
+
+
 init();
+
